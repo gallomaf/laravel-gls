@@ -34,9 +34,7 @@ class GLSServiceProvider extends ServiceProvider
 
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'gls');
 
-        $this->publishes([
-            __DIR__.'/../resources/views' => resource_path('views/vendor/gls'),
-        ]);
+        $this->publishes([__DIR__.'/../resources/views' => resource_path('views/vendor/gls'),]);
 
 
     }
